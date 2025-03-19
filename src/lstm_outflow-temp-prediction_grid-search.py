@@ -13,7 +13,7 @@ import torch.optim as optim
 import numpy as np
 import pandas as pd
 from util import water_day
-import util
+import util 
 import calendar
 import matplotlib.pyplot as plt
 import pickle
@@ -54,10 +54,14 @@ inftemp = np.array(sha_w2_inftemp)
 preds = np.concat((store,rel1,met1,inf,inftemp,dwy),axis=1)
 predictors = util.minmax_scale(preds)[0] #minmax scaling of predictors
 
+np.savez('./data/w2-predictors.npz',arr=preds)
+
 #predictand y
 sha_w2_temp = pd.read_csv('./data/W2_hist_95-16_outflow-temp.csv', index_col=0, parse_dates=True)[sd:ed] #W2 outflow temperature is predictand
 pdands = np.array(sha_w2_temp)
 predictands,pred_scale = util.minmax_scale(pdands) #minmax scaling of predictand
+
+np.savez('./data/w2-predictands.npz',arr=pdands)
 
 #save scaling values
 y_scale = {'y minmax': pred_scale}
