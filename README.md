@@ -9,3 +9,5 @@ Code to implement an LSTM prediction model for output temperature simulations fr
 2. Run 'lstm_outflow-temp-prediction_val-results.py' to fit model using best hyperparameters from step 1 and plot results (~2-3 min runtime)
 3. Run 'lstm_outflow-temp-prediction_model-out.py' to fit model to all available data and save the PyTorch LSTM model to prepare for implementation (~2-3 min runtime)
 4. 'lstm_outflow-temp-prediction_model-out_example.py' shows the implementation of the fitted LSTM model to the historical data. This code is the basis of how the model could be implemented in an optimization enviroment once the model has been fitted
+
+#### Note: Source code files with the '_90-24.py' suffix are programmed to run on the longer historical data from 1990-2024
