@@ -141,5 +141,12 @@ plt.ylabel("Temp (C)")
 plt.title("LSTM predictions vs CE-QUAL-W2 output")
 plt.show()
 
+# Plot error distribution
+plt.figure(figsize=(8, 6))
+plt.hist(unscale_true-unscale_preds,density=True)
+plt.xlabel("Temp error (C)")
+plt.title("LSTM prediction errors (true - pred)")
+plt.show()
+
 
 ############################################END##########################################################
