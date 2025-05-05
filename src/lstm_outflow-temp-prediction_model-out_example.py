@@ -23,29 +23,31 @@ import pickle
 # 1. Read in data
 #---------------------------------------------------------------------------
 
-sd = '10-01-1997'
-ed = '12-31-2015'
+jday_ref = '1950-01-01'
 
-dtg = np.load('./data/date-time_hist.npz')['arr']
+sd = '1990-11-16'
+ed = '2024-08-29'
+
+dtg = np.load('./data/date-time_90-24.npz')['arr']
 
 #load trained lstm model
-model = torch.load('./out/lstm_w2-output-temp-v1.pt',weights_only=False)
+model = torch.load('./out/lstm_w2-output-temp_90-24.pt',weights_only=False)
 
 #grid search parameters and scaling values
-val_res = pickle.load(open('./out/val-grid-results.pkl','rb'),encoding='latin1')
+val_res = pickle.load(open('./out/val-grid-results_90-24.pkl','rb'),encoding='latin1')
 bsize = val_res['opt batch size']
 hdsize = val_res['opt hidden layer']
 
 #scaling values
-yscale = pickle.load(open('./data/y-scale-minmax.pkl','rb'),encoding='latin1')
+yscale = pickle.load(open('./data/y-scale-minmax_90-24.pkl','rb'),encoding='latin1')
 y_minmax = yscale['y minmax']
 
 #load the saved predictors
-predictors_unscale = np.load('./data/w2-predictors.npz')['arr']
+predictors_unscale = np.load('./data/w2-predictors_90-24.npz')['arr']
 #***NOTE: column 1 (index 0) is the historical storage timeseries
 #***NOTE: column 2 (index 1) is the historical release timeseries
 # To run with a new storage and release profile, simply update these two columns with new data before scaling
-predictands_unscale = np.load('./data/w2-predictands.npz')['arr']
+predictands_unscale = np.load('./data/w2-predictands_90-24.npz')['arr']
 
 #----------------------------------------------------------------------------
 # 2. Setup LSTM model

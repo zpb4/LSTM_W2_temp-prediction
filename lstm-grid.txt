@@ -1,0 +1,32 @@
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0001, Val Loss: 0.0090
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0105
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0115
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0115
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0118
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0096
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0093
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0095
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0121
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0111
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0113
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0083
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0121
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0120
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0100
+Train size: 9848, Validation size: 2463
+Epoch [50/50], Train Loss: 0.0000, Val Loss: 0.0110
